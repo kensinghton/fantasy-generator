@@ -10,12 +10,13 @@
 	<div class="body">
 	<div id="tavernLogo"></div>	
 	<div class="header-name" id="tavernName"></div>
-	<div class="header"><b>Тип таверни:</b></div>
-	<select id="tavernWellness" onclick="newTavern()">
+	<div>
+		<b class="header">Тип таверни:</b>
+		<select id="tavernWellness" onclick="newTavern()">
 		<option value="2">Бідна</option>
 		<option value="1" selected="selected">Звичайна</option>
 		<option value="0">Багата</option>
-	</select><button onclick="newTavern()">Згенерувати нову таверну.</button>
+	</select><button onclick="newTavern()">Згенерувати нову таверну</button></div>
 	<div class="header"><b>Місцезнаходження:</b><div id="tavernLocation"></div></div>
 	<div class="header"><b>Опис:</b><div id="tavernDescription"></div></div>
 	<div class="header"><b>Хазяїн таверни:</b><div id="tavernInnkeeper"></div></div>
