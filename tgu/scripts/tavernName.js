@@ -1,8 +1,8 @@
-﻿var tavernTypes = ['Шинок', 'Корчма', 'Таверна', 'Гостинний двір'];
-var tavernNameBeginning = ['Зелен', 'Гарн', 'Чванлив', 'Золот', 'Пихат', 'Костян', 'Кривав', 'Бадьор'];
-var tavernNameEndining = ['Чайка', 'Дракон', 'Лелека', 'Горобець', 'Шляхтич', 'Край'];
+var tavernTypes = ["Шинок", "Корчма", "Таверна", "Гостинний двір"];
+var tavernNameBeginning = ["Зелен", "Гарн", "Чванлив", "Пихат", "Костян", "Кривав", "Бадьор", "Срібн", "Золот", "Хитк", "Усміхнен", "Гарцююч", "Позолочен", "Спритн", "Виюч", "Зарізан", "Хитр", "П'ян", "Стрибуч", "Ревуч", "Похмур", "Самотн", "Мандрівн", "Таємнич", "Гавкаюч", "Чорн", "Блискуч"];
+var tavernNameEndining = ["Чайка", "Дракон", "Лелека", "Горобець", "Шляхтич", "Край", "Вугор", "Дельфін", "Дверг", "Пегас", "Поні", "Лист", "Жеребець", "Вовк", "Цап", "Демон", "Козел", "Дух", "Рій", "Шут", "Пагорб", "Орел", "Сатир", "Пес", "Павук", "Ідол"];
 var tavernNamesEnding;
 var tavernLogoColor = ["золота", "срібна", "мідна", "дерев'яна"];
 var tavernLogoColorEnglish = ["Gold", "Silver", "Bronze", "Wood"];
-var tavernLogoColorBefore = '<div class="tavernLogo"><div class="tavernLogoColor';
+var tavernLogoColorBefore = "<div class='tavernLogo'><div class='tavernLogoColor";
 var tavernTypesEndingEnding;
