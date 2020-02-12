@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-16"/>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+	<title>Генератор Таверни</title>
+	<link href="../css/style.css" rel="stylesheet" />
+</head>
+<body onload="newTavern(), pageVersion()">
+	<div class="body">
+	<div id="tavernLogo"></div>	
+	<div class="header-name" id="tavernName"></div>
+	<div>
+		<b class="header">Тип таверни:</b>
+		<select id="tavernWellness" onclick="newTavern()">
+		<option value="2">Бідна</option>
+		<option value="1" selected="selected">Звичайна</option>
+		<option value="0">Багата</option>
+	</select><button onclick="newTavern()">Згенерувати нову таверну</button></div>
+	<div class="header"><b>Місцезнаходження:</b><div id="tavernLocation"></div></div>
+	<div class="header"><b>Опис:</b><div id="tavernDescription"></div></div>
+	<div class="header"><b>Хазяїн таверни:</b><div id="tavernInnkeeper"></div></div>
+	<div class="header"><b>Меню:</b>
+<!---		<div id="tavernMenu"></div>--->
+		<div id="tavernMenuNew"></div></div>
+	<div class="header"><b>Чутки:</b><br />
+		 <i><div id="tavernRumors"></div></i></div>
+<br />
+<!--
+<br/><br/>
+-->
+	<div class="header"><b>На головну:</b> <a href="../../">посилання</a></div>
+</div>
+<script src="../scripts/personVars.js"> </script>
+<script src="../scripts/generatePerson.js"> </script>
+<script src="../scripts/tavernName.js"></script>
+<script src="../scripts/tavernLocation.js"></script>
+<script src="../scripts/tavernDescription.js"></script>
+<script src="../scripts/tavernKeeper.js"></script>
+<script src="../scripts/tavernMenu.js"></script>
+<script src="../scripts/tavernRumors.js"></script>
+<script src="../scripts/tavernMain.js"></script>
+</body>
+</html>

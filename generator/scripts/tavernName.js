@@ -4,5 +4,5 @@ var tavernNameEndining = ["Чайка", "Дракон", "Лелека", "Гор�
 var tavernNamesEnding;
 var tavernLogoColor = ["золота", "срібна", "мідна", "дерев'яна"];
 var tavernLogoColorEnglish = ["Gold", "Silver", "Bronze", "Wood"];
-var tavernLogoColorBefore = "<div class='tavernLogo'><div class='tavernLogoColor";
+var tavernLogoColorBefore = '<div class="tavernLogo"><div class="tavernLogoColor';
 var tavernTypesEndingEnding;

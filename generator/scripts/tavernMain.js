@@ -13,7 +13,7 @@
 	//Tavern Logo
 	var tavernLogo = tavernNameBeginning[tavernNameBeginningRandom].charAt(0)+tavernNameEndining[tavernNameEndiningRandom].charAt(0);
 	var tavernLogoColorR = Math.floor(Math.random() * (tavernLogoColor.length));
-	document.getElementById('tavernLogo').innerHTML = tavernLogoColorBefore+tavernLogoColorEnglish[tavernLogoColorR]+'">'+tavernLogo+'</div></div>';
+	document.getElementById("tavernLogo").innerHTML = tavernLogoColorBefore+tavernLogoColorEnglish[tavernLogoColorR]+'">'+tavernLogo+'</div></div>';
 	//Tavern Location
 	var tavernLocationRoadRandom = Math.floor(Math.random() * (tavernLocationRoad.length));
 	var tavernLocationDirectionRandom = Math.floor(Math.random() * (tavernLocationDirection.length));
@@ -47,49 +47,8 @@
 	var tavernDescriptionComfortRandom = Math.floor(Math.random() * (tavernDescriptionComfort.length));
  	document.getElementById('tavernDescription').innerHTML = tavernTypes[tavernTypesRandom]+' є '+tavernDescriptionStores[tavernDescriptionStoresRandom]+'поверховою '+tavernDescriptionMadeOf[tavernDescriptionMadeOfRandom]+'будівлею із '+tavernDescriptionYardType[tavernDescriptionYardTypeRandom]+tavernDescriptionYardStyle[tavernDescriptionYardStyleRandom]+' двориком, оточеним'+tavernDescriptionFenceStyle[tavernDescriptionFenceStyleRandom]+' парканом. Над входом висить гарна '+tavernLogoColor[tavernLogoColorR]+' вивіска з літерами '+tavernLogo+'. У дворику є '+tavernDescriptionYardTablesStyle[tavernDescriptionYardTablesStyleRandom]+' столи'+tavernDescriptionYardStools[tavernDescriptionYardStoolsRandom]+'. Тут можна зупинитись в одній з '+tavernDescriptionRoomCount[tavernDescriptionRoomCountRandom]+tavernDescriptionRoomSize[tavernDescriptionRoomSizeRandom]+' кімнат, що мають '+tavernDescriptionBeds[tavernDescriptionBedsRandom]+' ліжка'+tavernDescriptionComfort[tavernDescriptionComfortRandom]+'.';
 	//Tavern Keeper	
-	var tavernKeeperSexRandom = Math.floor(Math.random() * (tavernKeeperSex.length));
-	var tavernKeeperAdverbRandom = Math.floor(Math.random() * (tavernKeeperAdverb.length));
-	var tavernKeeperRaceNumber = Math.floor(Math.random() * 4);
-	var tavernKeeperNameMaleHumanRandom = Math.floor(Math.random() * (tavernKeeperNameMaleHuman.length));
-	var tavernKeeperNameFemaleHumanRandom = Math.floor(Math.random() * (tavernKeeperNameFemaleHuman.length));
-	var tavernKeeperNameMaleDwarfRandom = Math.floor(Math.random() * (tavernKeeperNameMaleDwarf.length));
-	var tavernKeeperNameFemaleDwarfRandom = Math.floor(Math.random() * (tavernKeeperNameFemaleDwarf.length));
-	var tavernKeeperNameMaleElfRandom = Math.floor(Math.random() * (tavernKeeperNameMaleElf.length));
-	var tavernKeeperNameFemaleElfRandom = Math.floor(Math.random() * (tavernKeeperNameFemaleElf.length));
-	var tavernKeeperNameMaleHalflingRandom = Math.floor(Math.random() * (tavernKeeperNameMaleHalfling.length));
-	var tavernKeeperNameFemaleHalflingRandom = Math.floor(Math.random() * (tavernKeeperNameFemaleHalfling.length));
-	if (tavernKeeperSexRandom == 1) { 
-		var tavernKeeperSexEnding1 = 'ком';
-		var tavernKeeperSexEnding2 = 'ий';
-		var tavernKeeperSexEnding3 = 'к';
-		var tavernKeeperSexEnding4 = 'в';
-		var tavernKeeperRace = tavernKeeperRaceMale[tavernKeeperRaceNumber];
-	} 
-	else {	
-		var tavernKeeperSexEnding1 = 'цею';
-		var tavernKeeperSexEnding2 = 'а';
-		var tavernKeeperSexEnding3 = 'ця';
-		var tavernKeeperSexEnding4 = 'ла';
-		var tavernKeeperRace = tavernKeeperRaceFemale[tavernKeeperRaceNumber];
-	}
-	switch (tavernKeeperRaceNumber) {
-		case 0://human
-		var tavernKeeperName = tavernKeeperNameMaleHuman[tavernKeeperNameMaleHumanRandom];
-		if (tavernKeeperSexRandom == 0) { var tavernKeeperName = tavernKeeperNameFemaleHuman[tavernKeeperNameFemaleHumanRandom];} 
-		case 1://elf
-		var tavernKeeperName = tavernKeeperNameMaleElf[tavernKeeperNameMaleElfRandom];
-		if (tavernKeeperSexRandom == 0) { var tavernKeeperName = tavernKeeperNameFemaleElf[tavernKeeperNameFemaleElfRandom];}
-		case 2://dwarf
-		var tavernKeeperName = tavernKeeperNameMaleDwarf[tavernKeeperNameMaleDwarfRandom];
-		if (tavernKeeperSexRandom == 0) { var tavernKeeperName = tavernKeeperNameFemaleDwarf[tavernKeeperNameFemaleDwarfRandom];}
-		case 3://halfling
-		var tavernKeeperName = tavernKeeperNameMaleHalfling[tavernKeeperNameMaleHalflingRandom];
-		if (tavernKeeperSexRandom == 0) { var tavernKeeperName = tavernKeeperNameFemaleHalfling[tavernKeeperNameFemaleHalflingRandom];}
-	}
-	if (tavernKeeperAdverb[tavernKeeperAdverbRandom] == '') { var tavernKeeperSexEnding2 = '';}
-	document.getElementById('tavernInnkeeper').innerHTML = 'Власни'+tavernKeeperSexEnding1+' '+tavernName[tavernTypesRandom]+' є '+tavernKeeperAdverb[tavernKeeperAdverbRandom]+tavernKeeperSexEnding2+' '+tavernKeeperRace+" на ім'я "+tavernKeeperName+'.';
-	//Tavern Menu
-	//document.getElementById('tavernMenu').innerHTML = 'Власни'+tavernKeeperSexEnding3+' побачи'+tavernKeeperSexEnding4+' вас та підморгну'+tavernKeeperSexEnding4+': <i>"У нас тут, як бачиш, '+tavernMenuTypeWording[tavernWellnessType]+tavernMenuLivingCostAdditional[tavernWellnessType]+', проживання у нас коштує '+tavernMenuLivingCost[tavernWellnessType]+' за ніч."</i><br><ul><li>'+tavernMenuWine[tavernWellnessType]+'</li><li>'+tavernMenuBeer[tavernWellnessType]+'</li><li>'+tavernMenuBread[tavernWellnessType]+'</li><li>'+tavernMenuCheese[tavernWellnessType]+'</li><li>Харчування на один день - '+tavernMenuFood[tavernWellnessType]+'</li></ul>';
+	var personArray = generatePerson();
+	document.getElementById('tavernInnkeeper').innerHTML = 'Власни'+personArray[1]+' '+tavernName[tavernTypesRandom]+' є '+personArray[8]+personArray[2]+' '+personArray[9]+" на ім'я "+personArray[0]+'.';
 	//Tavern Menu New
 	var tavernMenuArray = [];
 	var tavernWellnessCount = Number(tavernWellnessType);
@@ -141,5 +100,7 @@
 	document.getElementById('tavernRumors').innerHTML = '"'+tavernRumors1[tavernRumorsRandom1]+'"<br />"'+tavernRumors2[tavernRumorsRandom2]+'"<br />"'+tavernRumors3[tavernRumorsRandom3]+'"';
 }
 function pageVersion() {
+	var generatorName = 'Генератор Таверни';
+	var generatorVersion = '0.2';
 	document.title = generatorName+' '+generatorVersion;
 	}
