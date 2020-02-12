@@ -1,6 +1,6 @@
-# fantasy-tavern-generator
-Fantasy tavern generator for fantasy rpg games. Ukrainian language only.
+# fantasy-generator
+Fantasy generators for tt rpg games. Ukrainian language only.
 
 Generates simple tavern with it's location, description, tavern keeper, menu and rumors.
 
-[Генератор Таверни](https://kensinghton.github.io/fantasy-tavern-generator/)
+[Генератори](https://kensinghton.github.io/fantasy-generator/)
