@@ -28,7 +28,7 @@
 	var personArray = generatePerson();
 	var personRepArray = generatePerson();
 	var villageRulerLiveHere = Math.floor(Math.random() * 3);
-	if (villageRulerPresence == 0 && villageRulerLiveHere == 0) { var villageRulerPresenceText = ', але '+personArray[5]+' не живе в ньому, замість '+personArray[7]+' тут є '+personArray[6]+' підрядник - '+personRepArray[9]+' '+personRepArray[0];}
+	if (villageRulerPresence == 0 && villageRulerLiveHere == 0) { var villageRulerPresenceText = ', але '+personArray[5]+' не живе в ньому, замість '+personArray[6]+' тут є '+personArray[7]+' підрядник - '+personRepArray[9]+' '+personRepArray[0];}
 	document.getElementById('villageRuler').innerHTML = villageRulerTitleSelected+' '+personArray[0]+', '+personArray[8]+personArray[2]+' '+personArray[9]+villageRulerPresenceText;
 
 }
