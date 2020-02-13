@@ -1,6 +1,6 @@
 ﻿function newVillage() {
 	//Village Size
-	var villagePopulation = 10;
+	//var villagePopulation = 10;
 	var villageSizeSelected = document.getElementById('villageSize');
 	var villageType = villageSizeSelected.options[villageSizeSelected.selectedIndex].text;
 	var villageSize = villageSizeSelected.options[villageSizeSelected.selectedIndex].value;
@@ -21,7 +21,7 @@
 		villageRulerTitleSelected = villageRulerTitle[2];
 		break;
 	}
-	var villageRacesSelected = Math.floor(Math.random() * (villageRace.length));
+	var villageRacesSelected = Math.floor(Math.random() * (villageRaces.length));
 	var villageRacesTensionsRoll = Math.floor(Math.random() * 20 + 1);
 	switch (villageRacesTensionsRoll) {
 	  case 1:
@@ -71,7 +71,78 @@
 	var villageRulerLiveHere = Math.floor(Math.random() * 3);
 	if (villageRulerPresence == 0 && villageRulerLiveHere == 0) { var villageRulerPresenceText = ', але '+personArray[5]+' не живе в ньому, замість '+personArray[6]+' тут є '+personArray[7]+' підрядник - '+personRepArray[9]+' '+personRepArray[0];}
 	document.getElementById('villageRuler').innerHTML = villageRulerTitleSelected+' '+personArray[0]+', '+personArray[8]+personArray[2]+' '+personArray[9]+villageRulerPresenceText;
-
+	//var villageName = generateVillageName();
+	var villageNameFull = generateVillageName();
+	villageNameEndCharacterSel = villageNameFull.toString().slice(-1);
+	  switch (villageNameEndCharacterSel) {
+	    case 'а':
+	    case 'я':
+	    villageNameEndCharacter = 'а';
+	    break;
+	    case 'і':
+	    case 'и':
+    	    villageNameEndCharacter = 'і';
+	    break;
+	    default:
+	    villageNameEndCharacter = 'ий';
+	    break;
+	  }
+	var villageRulerStatusRoll = Math.floor(Math.random() * 20 + 1);
+	switch (villageRulerStatusRoll) {
+	  case 1:
+	  case 2:
+	  case 3:
+	  case 4:
+	  case 5:
+		villageRulerStatusSelected = villageRulerStatus[0];
+		break;
+	  case 6:
+	  case 7:
+	  case 8:
+		villageRulerStatusSelected = villageRulerStatus[1];
+		break;
+	  case 9:
+		villageRulerStatusSelected = villageRulerStatus[2];
+		break;
+	  case 10:
+		villageRulerStatusSelected = villageRulerStatus[3];
+		break;
+	  case 11:
+		villageRulerStatusSelected = villageRulerStatus[4];
+		break;
+	  case 12:
+		villageRulerStatusSelected = villageRulerStatus[5];
+		break;
+	  case 13:
+		villageRulerStatusSelected = villageRulerStatus[6];
+		break;
+	  case 14:
+		villageRulerStatusSelected = villageRulerStatus[7];
+		break;
+	  case 15:
+		villageRulerStatusSelected = villageRulerStatus[8];
+		break;
+	  case 16:
+		villageRulerStatusSelected = villageRulerStatus[9];
+		break;
+	  case 17:
+	  case 18:
+		villageRulerStatusSelected = villageRulerStatus[10];
+		break;
+	  case 19:
+	  case 20:
+		villageRulerStatusSelected = villageRulerStatus[11];
+		break;
+	}
+	var villageFeatureRoll = Math.floor(Math.random() * 20);
+	document.getElementById('villageName').innerHTML =  villageNameFull;
+	document.getElementById('villageName2').innerHTML =  villageNameFull;
+	document.getElementById('villageFeature').innerHTML =  villageFeature[villageFeatureRoll];
+	document.getElementById('villageNameEnding').innerHTML = villageNameEndCharacter;
+	document.getElementById('villageRuler2').innerHTML =  personArray[0]+' '+villageRulerStatusSelected;
+	document.getElementById('villageType2').innerHTML = villageType;
+	var villageKnownForRoll = Math.floor(Math.random() * 20);
+	document.getElementById('villageKnownFor').innerHTML =  villageKnownFor[villageKnownForRoll];
 }
 
 function pageVersion() {
